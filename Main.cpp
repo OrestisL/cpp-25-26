@@ -30,7 +30,7 @@ std::string getUserInput()
 	return input;
 }
 
-int main(int argc, char* argv[])
+int mainOld(int argc, char* argv[])
 {
 	std::string play = "y";
 
@@ -91,6 +91,8 @@ int main(int argc, char* argv[])
 		std::cin >> play;
 
 	} while (play == "y" || play == "yes");
+
+	return 0;
 }
 
 
