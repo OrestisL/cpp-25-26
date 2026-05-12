@@ -38,5 +38,11 @@
     <ClInclude Include="Points.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Files.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hydro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

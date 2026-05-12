@@ -7,6 +7,7 @@ namespace Core
 	{
 	public:
 		virtual std::string toString() { return "Hello!"; }
+		virtual std::string toStringOnlyValues() { return ""; }
 	};
 
 	class Color : public BaseClass
@@ -65,6 +66,10 @@ namespace Core
 		{
 			return "X: " + std::to_string(m_x) + " Y: " + std::to_string(m_y);
 		}
+		std::string toStringOnlyValues() override
+		{
+			return  std::to_string(m_x) + " " + std::to_string(m_y);
+		}
 	public:
 		double operator*(const Vector2d& other)
 		{
@@ -91,6 +96,10 @@ namespace Core
 		std::string toString() override
 		{
 			return "X: " + std::to_string(m_x) + " Y: " + std::to_string(m_y);
+		}
+		std::string toStringOnlyValues() override
+		{
+			return  std::to_string(m_x) + " " + std::to_string(m_y);
 		}
 	};
 }
